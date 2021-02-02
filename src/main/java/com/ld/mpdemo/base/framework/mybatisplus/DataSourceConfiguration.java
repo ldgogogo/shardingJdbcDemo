@@ -32,8 +32,6 @@ import java.util.Map;
 @Configuration
 @AutoConfigureBefore({DynamicDataSourceAutoConfiguration.class, SpringBootConfiguration.class})
 public class DataSourceConfiguration {
-
-
     /**
      * 动态数据源配置项
      */
