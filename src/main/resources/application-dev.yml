@@ -1,0 +1,39 @@
+spring:
+  # 动态数据源配置
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #设置严格模式,默认false不启动. 启动后在未匹配到指定数据源时候会抛出异常,不启动则使用默认数据源.
+      datasource:
+        master:
+          username: root
+          password: 123456
+          url: jdbc:mysql://127.0.0.1:3306/master?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slave:
+          username: root
+          password: 123456
+          url: jdbc:mysql://127.0.0.1:3306/slave?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+          driver-class-name: com.mysql.cj.jdbc.Driver
+  # shardingjdbc 配置
+  shardingsphere:
+    datasource:
+      names: shardingmaster
+      shardingmaster:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/master?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+        username: root
+        password: 123456
+    sharding:
+      tables:
+        sharding_test: # 表名
+          actual-data-nodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+          table-strategy:
+            standard:
+              sharding-column: date # 分片键
+              precise-algorithm-class-name: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm # 实现类的完全限定类名
+              range-algorithm-class-name: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+    props:
+      sql:
+        show: true

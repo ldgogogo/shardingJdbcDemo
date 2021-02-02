@@ -1,0 +1,32 @@
+server:
+  port: 8885
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+  servlet:
+    multipart:
+      max-file-size: 100MB
+mybatis-plus:
+  mapper-locations: mybatisplus/*/*Mapper.xml
+  typeAliasesPackage: com.ld.mpdemo.*.entity
+  global-config:
+    db-config:
+      #id-type: UUID
+      column-underline: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+    refresh: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p %-40.40logger{39} %L -> %m%n"
+  level:
+    com.ld: debug
+  file:
+    name: logs/mpdemo.log

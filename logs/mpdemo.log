@@ -1,0 +1,786 @@
+2021-01-27 11:11:39.976  INFO 24816 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 24816 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:11:39.994 DEBUG 24816 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:11:39.995  INFO 24816 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:11:40.879  INFO 24816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:11:40.890  INFO 24816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:11:40.891  INFO 24816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:11:40.894  INFO 24816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:11:40.896  INFO 24816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:11:40.897  INFO 24816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:11:41.042  INFO 24816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$afb1da88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:11:41.312  INFO 24816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:11:41.321  INFO 24816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:11:41.321  INFO 24816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:11:41.405  INFO 24816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:11:41.405  INFO 24816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2021-01-27 11:11:41.464  INFO 24816 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:11:41.465  INFO 24816 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:11:41.465  INFO 24816 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:11:41.465  INFO 24816 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:11:41.465  INFO 24816 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:11:41.465  INFO 24816 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:11:41.465  INFO 24816 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:11:41.621  INFO 24816 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:11:41.624  INFO 24816 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:11:41.625  INFO 24816 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:11:41.626  INFO 24816 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:11:41.626  INFO 24816 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:11:41.626  INFO 24816 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:11:42.281  INFO 24816 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:11:42.412  WARN 24816 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:11:42.512  INFO 24816 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:11:42.585  INFO 24816 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:11:42.586  INFO 24816 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+{}
+
+2021-01-27 11:11:42.598  INFO 24816 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:11:42.614  INFO 24816 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:11:42.688  INFO 24816 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 102 milliseconds.
+2021-01-27 11:11:42.793  INFO 24816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:11:42.802  INFO 24816 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 3.254 seconds (JVM running for 3.982)
+2021-01-27 11:11:54.865  INFO 24816 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:11:54.865  INFO 24816 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:11:54.866  INFO 24816 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-27 11:12:19.365  INFO 24816 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:12:19.366  INFO 24816 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:12:19.366  WARN 24816 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:12:19.367  INFO 24816 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:12:19.368  INFO 24816 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:12:19.368  INFO 24816 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:12:19.369  INFO 24816 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:12:24.048  INFO 952 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 952 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:12:24.051 DEBUG 952 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:12:24.051  INFO 952 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:12:24.784  INFO 952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:12:24.794  INFO 952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:12:24.796  INFO 952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:12:24.798  INFO 952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:12:24.801  INFO 952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:12:24.802  INFO 952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:12:24.946  INFO 952 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$7526a792] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:12:25.191  INFO 952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:12:25.199  INFO 952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:12:25.199  INFO 952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:12:25.275  INFO 952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:12:25.276  INFO 952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1071 ms
+2021-01-27 11:12:25.332  INFO 952 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:12:25.333  INFO 952 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:12:25.333  INFO 952 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:12:25.333  INFO 952 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:12:25.333  INFO 952 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:12:25.334  INFO 952 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:12:25.334  INFO 952 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:12:25.492  INFO 952 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:12:25.496  INFO 952 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:12:25.496  INFO 952 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:12:25.498  INFO 952 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:12:25.498  INFO 952 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:12:25.498  INFO 952 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:12:26.136  INFO 952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:12:26.251  WARN 952 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:12:26.347  INFO 952 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:12:26.411  INFO 952 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:12:26.412  INFO 952 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+{}
+
+2021-01-27 11:12:26.423  INFO 952 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:12:26.449  INFO 952 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:12:26.529  INFO 952 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 117 milliseconds.
+2021-01-27 11:12:26.628  INFO 952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:12:26.636  INFO 952 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.943 seconds (JVM running for 3.625)
+2021-01-27 11:12:32.002  INFO 952 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:12:32.003  INFO 952 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:12:32.003  INFO 952 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-27 11:15:22.793  INFO 952 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:15:22.794  INFO 952 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:15:22.794  WARN 952 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:15:22.796  INFO 952 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:15:22.796  INFO 952 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:15:22.796  INFO 952 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:15:22.797  INFO 952 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:15:28.454  INFO 30044 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 30044 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:15:28.457 DEBUG 30044 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:15:28.458  INFO 30044 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:15:29.194  INFO 30044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:15:29.205  INFO 30044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:15:29.207  INFO 30044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:15:29.209  INFO 30044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:15:29.212  INFO 30044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:15:29.213  INFO 30044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:15:29.355  INFO 30044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$877dcd55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:15:29.599  INFO 30044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:15:29.606  INFO 30044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:15:29.606  INFO 30044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:15:29.684  INFO 30044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:15:29.684  INFO 30044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1068 ms
+2021-01-27 11:15:29.739  INFO 30044 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:15:29.739  INFO 30044 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:15:29.740  INFO 30044 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:15:29.740  INFO 30044 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:15:29.740  INFO 30044 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:15:29.740  INFO 30044 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:15:29.740  INFO 30044 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:15:29.893  INFO 30044 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:15:29.897  INFO 30044 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:15:29.898  INFO 30044 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:15:29.899  INFO 30044 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:15:29.899  INFO 30044 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:15:29.899  INFO 30044 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:15:30.540  INFO 30044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:15:30.652  WARN 30044 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:15:30.745  INFO 30044 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:15:30.817  INFO 30044 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:15:30.818  INFO 30044 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+{}
+
+2021-01-27 11:15:30.830  INFO 30044 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:15:30.856  INFO 30044 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:15:30.943  INFO 30044 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 125 milliseconds.
+2021-01-27 11:15:31.049  INFO 30044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:15:31.058  INFO 30044 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.958 seconds (JVM running for 3.671)
+2021-01-27 11:15:35.179  INFO 30044 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:15:35.180  INFO 30044 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:15:35.180  INFO 30044 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-27 11:16:57.235  INFO 30044 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:16:57.235  INFO 30044 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:16:57.236  WARN 30044 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:16:57.237  INFO 30044 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:16:57.237  INFO 30044 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:16:57.238  INFO 30044 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:16:57.238  INFO 30044 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:17:00.265  INFO 28812 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 28812 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:17:00.267 DEBUG 28812 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:17:00.268  INFO 28812 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:17:00.998  INFO 28812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:17:01.009  INFO 28812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:17:01.011  INFO 28812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:17:01.013  INFO 28812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:17:01.016  INFO 28812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:17:01.018  INFO 28812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:17:01.164  INFO 28812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$30736739] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:17:01.409  INFO 28812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:17:01.417  INFO 28812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:17:01.417  INFO 28812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:17:01.492  INFO 28812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:17:01.492  INFO 28812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1078 ms
+2021-01-27 11:17:01.548  INFO 28812 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:17:01.548  INFO 28812 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:17:01.548  INFO 28812 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:17:01.548  INFO 28812 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:17:01.549  INFO 28812 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:17:01.549  INFO 28812 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:17:01.549  INFO 28812 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:17:01.709  INFO 28812 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:17:01.713  INFO 28812 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:17:01.713  INFO 28812 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:17:01.715  INFO 28812 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:17:01.715  INFO 28812 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:17:01.715  INFO 28812 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:17:02.347  INFO 28812 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:17:02.465  WARN 28812 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:17:02.560  INFO 28812 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:17:02.626  INFO 28812 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:17:02.627  INFO 28812 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+{}
+
+2021-01-27 11:17:02.638  INFO 28812 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:17:02.655  INFO 28812 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:17:02.735  INFO 28812 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 108 milliseconds.
+2021-01-27 11:17:02.834  INFO 28812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:17:02.842  INFO 28812 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.928 seconds (JVM running for 3.581)
+2021-01-27 11:17:08.084  INFO 28812 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:17:08.084  INFO 28812 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:17:08.085  INFO 28812 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-27 11:30:50.791  INFO 28812 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:30:50.792  INFO 28812 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:30:50.792  WARN 28812 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:30:50.793  INFO 28812 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:30:50.794  INFO 28812 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:30:50.804  INFO 28812 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:30:50.808  INFO 28812 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:30:54.506  INFO 18120 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 18120 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:30:54.509 DEBUG 18120 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:30:54.509  INFO 18120 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:30:55.239  INFO 18120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:30:55.250  INFO 18120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:30:55.252  INFO 18120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:30:55.254  INFO 18120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:30:55.256  INFO 18120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:30:55.258  INFO 18120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:30:55.403  INFO 18120 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$465b9fe9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:30:55.649  INFO 18120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:30:55.656  INFO 18120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:30:55.656  INFO 18120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:30:55.737  INFO 18120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:30:55.737  INFO 18120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1082 ms
+2021-01-27 11:30:55.794  INFO 18120 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:30:55.794  INFO 18120 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:30:55.795  INFO 18120 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:30:55.795  INFO 18120 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:30:55.795  INFO 18120 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:30:55.795  INFO 18120 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:30:55.795  INFO 18120 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:30:55.948  INFO 18120 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:30:55.952  INFO 18120 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:30:55.953  INFO 18120 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:30:55.954  INFO 18120 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:30:55.954  INFO 18120 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:30:55.954  INFO 18120 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:30:56.588  INFO 18120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:30:56.700  WARN 18120 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:30:56.793  INFO 18120 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:30:56.858  INFO 18120 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:30:56.859  INFO 18120 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+{}
+
+2021-01-27 11:30:56.871  INFO 18120 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:30:56.887  INFO 18120 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:30:56.958  INFO 18120 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 99 milliseconds.
+2021-01-27 11:30:57.057  INFO 18120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:30:57.065  INFO 18120 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.92 seconds (JVM running for 3.579)
+2021-01-27 11:31:30.041  INFO 18120 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:31:30.042  INFO 18120 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:31:30.042  INFO 18120 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-27 11:31:30.532 ERROR 18120 --- [http-nio-8885-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'master.sharding_test_202112' doesn't exist
+### The error may exist in file [E:\IdeaProjects\mpdemo\target\classes\mybatisplus\shardingTest\ShardingTestMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from sharding_test a where a.date between '2020-12-23 10:08:09' and '2021-12-26 10:08:09'
+### Cause: java.sql.SQLSyntaxErrorException: Table 'master.sharding_test_202112' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'master.sharding_test_202112' doesn't exist] with root cause
+
+java.sql.SQLSyntaxErrorException: Table 'master.sharding_test_202112' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498) ~[druid-1.1.10.jar:1.1.10]
+	at org.apache.shardingsphere.shardingjdbc.executor.SQLExecuteCallbackFactory$2.executeSQL(SQLExecuteCallbackFactory.java:62) ~[sharding-jdbc-core-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.shardingjdbc.executor.SQLExecuteCallbackFactory$2.executeSQL(SQLExecuteCallbackFactory.java:58) ~[sharding-jdbc-core-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.sharding.execute.sql.execute.SQLExecuteCallback.execute0(SQLExecuteCallback.java:82) ~[sharding-core-execute-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.sharding.execute.sql.execute.SQLExecuteCallback.execute(SQLExecuteCallback.java:58) ~[sharding-core-execute-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.underlying.executor.engine.ExecutorEngine.syncExecute(ExecutorEngine.java:97) ~[shardingsphere-executor-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.underlying.executor.engine.ExecutorEngine.parallelExecute(ExecutorEngine.java:93) ~[shardingsphere-executor-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.underlying.executor.engine.ExecutorEngine.execute(ExecutorEngine.java:76) ~[shardingsphere-executor-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.sharding.execute.sql.execute.SQLExecuteTemplate.execute(SQLExecuteTemplate.java:68) ~[sharding-core-execute-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.sharding.execute.sql.execute.SQLExecuteTemplate.execute(SQLExecuteTemplate.java:51) ~[sharding-core-execute-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.shardingjdbc.executor.AbstractStatementExecutor.executeCallback(AbstractStatementExecutor.java:129) ~[sharding-jdbc-core-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.shardingjdbc.executor.PreparedStatementExecutor.execute(PreparedStatementExecutor.java:148) ~[sharding-jdbc-core-4.1.1.jar:4.1.1]
+	at org.apache.shardingsphere.shardingjdbc.jdbc.core.statement.ShardingPreparedStatement.execute(ShardingPreparedStatement.java:145) ~[sharding-jdbc-core-4.1.1.jar:4.1.1]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.1.jar:3.5.1]
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67) ~[mybatis-plus-core-3.1.1.jar:3.1.1]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.1.jar:3.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at com.sun.proxy.$Proxy68.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158) ~[mybatis-plus-core-3.1.1.jar:3.1.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76) ~[mybatis-plus-core-3.1.1.jar:3.1.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:62) ~[mybatis-plus-core-3.1.1.jar:3.1.1]
+	at com.sun.proxy.$Proxy69.shardingTest(Unknown Source) ~[na:na]
+	at com.ld.mpdemo.shardingTest.service.impl.ShardingTestServiceImpl.shardingTest(ShardingTestServiceImpl.java:31) ~[classes/:na]
+	at com.ld.mpdemo.shardingTest.service.impl.ShardingTestServiceImpl$$FastClassBySpringCGLIB$$b6da523.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.3.jar:5.3.3]
+	at com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationInterceptor.invoke(DynamicDataSourceAnnotationInterceptor.java:50) ~[dynamic-datasource-spring-boot-starter-3.1.1.jar:3.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.3.jar:5.3.3]
+	at com.ld.mpdemo.shardingTest.service.impl.ShardingTestServiceImpl$$EnhancerBySpringCGLIB$$d8096ac.shardingTest(<generated>) ~[classes/:na]
+	at com.ld.mpdemo.shardingTest.controller.ShardingTestController.shardingTest(ShardingTestController.java:32) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_172]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_172]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_172]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_172]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.10.jar:1.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_172]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_172]
+
+2021-01-27 11:31:48.657  INFO 18120 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:31:48.658  INFO 18120 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:31:48.658  WARN 18120 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:31:48.660  INFO 18120 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:31:48.660  INFO 18120 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:31:48.661  INFO 18120 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:31:48.661  INFO 18120 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:31:58.120  INFO 20736 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 20736 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:31:58.123 DEBUG 20736 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:31:58.123  INFO 20736 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:31:58.838  INFO 20736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:31:58.848  INFO 20736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:31:58.850  INFO 20736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:31:58.851  INFO 20736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:31:58.855  INFO 20736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:31:58.856  INFO 20736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:31:59.005  INFO 20736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$5a161129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:31:59.251  INFO 20736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:31:59.259  INFO 20736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:31:59.259  INFO 20736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:31:59.336  INFO 20736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:31:59.337  INFO 20736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1073 ms
+2021-01-27 11:31:59.395  INFO 20736 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:31:59.396  INFO 20736 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:31:59.396  INFO 20736 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:31:59.396  INFO 20736 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:31:59.396  INFO 20736 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:31:59.396  INFO 20736 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:31:59.396  INFO 20736 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:31:59.559  INFO 20736 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:31:59.563  INFO 20736 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:31:59.564  INFO 20736 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:31:59.565  INFO 20736 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:31:59.565  INFO 20736 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:31:59.565  INFO 20736 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:32:00.202  INFO 20736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:32:00.315  WARN 20736 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:32:00.410  INFO 20736 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:32:00.467  INFO 20736 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:32:00.468  INFO 20736 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+{}
+
+2021-01-27 11:32:00.479  INFO 20736 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:32:00.518  INFO 20736 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:32:00.600  INFO 20736 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 132 milliseconds.
+2021-01-27 11:32:00.699  INFO 20736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:32:00.708  INFO 20736 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.937 seconds (JVM running for 3.6)
+2021-01-27 11:32:06.318  INFO 20736 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:32:06.319  INFO 20736 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:32:06.319  INFO 20736 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-27 11:32:54.266  INFO 20736 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:32:54.267  INFO 20736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:32:54.267  WARN 20736 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:32:54.269  INFO 20736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:32:54.269  INFO 20736 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:32:54.269  INFO 20736 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:32:54.270  INFO 20736 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:33:07.426  INFO 29708 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 29708 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:33:07.429 DEBUG 29708 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:33:07.429  INFO 29708 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:33:08.154  INFO 29708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:33:08.164  INFO 29708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:33:08.166  INFO 29708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:33:08.168  INFO 29708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:33:08.170  INFO 29708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:33:08.172  INFO 29708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:33:08.314  INFO 29708 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$81597d7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:33:08.559  INFO 29708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:33:08.567  INFO 29708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:33:08.567  INFO 29708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:33:08.641  INFO 29708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:33:08.641  INFO 29708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1077 ms
+2021-01-27 11:33:08.696  INFO 29708 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:33:08.696  INFO 29708 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:33:08.697  INFO 29708 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:33:08.697  INFO 29708 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:33:08.697  INFO 29708 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:33:08.697  INFO 29708 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:33:08.697  INFO 29708 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:33:08.852  INFO 29708 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:33:08.856  INFO 29708 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:33:08.857  INFO 29708 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:33:08.858  INFO 29708 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:33:08.858  INFO 29708 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:33:08.858  INFO 29708 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:33:09.496  INFO 29708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:33:09.612  WARN 29708 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:33:09.707  INFO 29708 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:33:09.771  INFO 29708 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:33:09.772  INFO 29708 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+{}
+
+2021-01-27 11:33:09.783  INFO 29708 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:33:09.802  INFO 29708 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:33:09.879  INFO 29708 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 107 milliseconds.
+2021-01-27 11:33:09.977  INFO 29708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:33:09.985  INFO 29708 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.911 seconds (JVM running for 3.646)
+2021-01-27 11:33:16.153  INFO 29708 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:33:16.154  INFO 29708 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:33:16.154  INFO 29708 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-27 11:34:44.988  INFO 29708 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:34:44.989  INFO 29708 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:34:44.989  WARN 29708 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:34:44.990  INFO 29708 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:34:44.990  INFO 29708 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:34:44.991  INFO 29708 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:34:44.992  INFO 29708 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:34:51.604  INFO 3892 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 3892 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:34:51.606 DEBUG 3892 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:34:51.606  INFO 3892 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:34:52.356  INFO 3892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:34:52.367  INFO 3892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:34:52.369  INFO 3892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:34:52.371  INFO 3892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:34:52.374  INFO 3892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:34:52.376  INFO 3892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:34:52.524  INFO 3892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$e538b4e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:34:52.774  INFO 3892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:34:52.781  INFO 3892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:34:52.782  INFO 3892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:34:52.857  INFO 3892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:34:52.857  INFO 3892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1077 ms
+2021-01-27 11:34:52.912  INFO 3892 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:34:52.912  INFO 3892 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:34:52.912  INFO 3892 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:34:52.913  INFO 3892 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:34:52.913  INFO 3892 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:34:52.913  INFO 3892 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:34:52.913  INFO 3892 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:34:53.066  INFO 3892 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:34:53.069  INFO 3892 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:34:53.070  INFO 3892 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:34:53.071  INFO 3892 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:34:53.071  INFO 3892 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:34:53.071  INFO 3892 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:34:53.705  INFO 3892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:34:53.817  WARN 3892 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:34:53.916  INFO 3892 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:34:53.971  INFO 3892 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:34:53.972  INFO 3892 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+sql.show: 'true'
+
+2021-01-27 11:34:53.983  INFO 3892 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:34:53.999  INFO 3892 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:34:54.069  INFO 3892 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 97 milliseconds.
+2021-01-27 11:34:54.185  INFO 3892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:34:54.197  INFO 3892 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.963 seconds (JVM running for 3.624)
+2021-01-27 11:34:58.245  INFO 3892 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:34:58.245  INFO 3892 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:34:58.246  INFO 3892 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-27 11:34:58.656  INFO 3892 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Logic SQL: select * from sharding_test a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:34:58.656  INFO 3892 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : SQLStatement: SelectStatementContext(super=CommonSQLStatementContext(sqlStatement=org.apache.shardingsphere.sql.parser.sql.statement.dml.SelectStatement@7c761260, tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@32eaa702), tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@32eaa702, projectionsContext=ProjectionsContext(startIndex=7, stopIndex=7, distinctRow=false, projections=[ShorthandProjection(owner=Optional.empty, actualColumns=[])]), groupByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.groupby.GroupByContext@64df41, orderByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.orderby.OrderByContext@4eeda69f, paginationContext=org.apache.shardingsphere.sql.parser.binder.segment.select.pagination.PaginationContext@2445830, containsSubquery=false)
+2021-01-27 11:34:58.656  INFO 3892 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select * from sharding_test_202012 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:34:58.656  INFO 3892 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select * from sharding_test_202101 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:36:08.244  INFO 3892 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:36:08.244  INFO 3892 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:36:08.245  WARN 3892 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:36:08.246  INFO 3892 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:36:08.246  INFO 3892 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:36:08.247  INFO 3892 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:36:08.248  INFO 3892 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:36:11.493  INFO 6620 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 6620 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:36:11.495 DEBUG 6620 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:36:11.496  INFO 6620 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:36:12.233  INFO 6620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:36:12.243  INFO 6620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:36:12.245  INFO 6620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:36:12.248  INFO 6620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:36:12.250  INFO 6620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:36:12.252  INFO 6620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:36:12.406  INFO 6620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$9c490a4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:36:12.658  INFO 6620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:36:12.665  INFO 6620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:36:12.665  INFO 6620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:36:12.741  INFO 6620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:36:12.741  INFO 6620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
+2021-01-27 11:36:12.797  INFO 6620 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:36:12.797  INFO 6620 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:36:12.797  INFO 6620 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:36:12.797  INFO 6620 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:36:12.797  INFO 6620 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:36:12.797  INFO 6620 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:36:12.798  INFO 6620 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:36:12.948  INFO 6620 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:36:12.952  INFO 6620 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:36:12.952  INFO 6620 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:36:12.953  INFO 6620 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:36:12.953  INFO 6620 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:36:12.953  INFO 6620 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:36:13.586  INFO 6620 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:36:13.702  WARN 6620 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:36:13.797  INFO 6620 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:36:13.863  INFO 6620 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:36:13.864  INFO 6620 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+sql.show: 'true'
+
+2021-01-27 11:36:13.876  INFO 6620 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:36:13.892  INFO 6620 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:36:13.961  INFO 6620 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 97 milliseconds.
+2021-01-27 11:36:14.066  INFO 6620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:36:14.075  INFO 6620 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.958 seconds (JVM running for 3.682)
+2021-01-27 11:36:21.751  INFO 6620 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:36:21.751  INFO 6620 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:36:21.752  INFO 6620 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-27 11:36:22.161  INFO 6620 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Logic SQL: select id,date from sharding_test a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:36:22.161  INFO 6620 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : SQLStatement: SelectStatementContext(super=CommonSQLStatementContext(sqlStatement=org.apache.shardingsphere.sql.parser.sql.statement.dml.SelectStatement@d3d1559, tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@10d7ea20), tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@10d7ea20, projectionsContext=ProjectionsContext(startIndex=7, stopIndex=13, distinctRow=false, projections=[ColumnProjection(owner=null, name=id, alias=Optional.empty), ColumnProjection(owner=null, name=date, alias=Optional.empty)]), groupByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.groupby.GroupByContext@273328bf, orderByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.orderby.OrderByContext@76329471, paginationContext=org.apache.shardingsphere.sql.parser.binder.segment.select.pagination.PaginationContext@1340d033, containsSubquery=false)
+2021-01-27 11:36:22.161  INFO 6620 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date from sharding_test_202012 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:36:22.161  INFO 6620 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date from sharding_test_202101 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:39:14.256  INFO 6620 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 11:39:14.257  INFO 6620 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 11:39:14.257  WARN 6620 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 11:39:14.259  INFO 6620 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 11:39:14.259  INFO 6620 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 11:39:14.260  INFO 6620 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 11:39:14.260  INFO 6620 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:39:19.895  INFO 29472 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 29472 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:39:19.898 DEBUG 29472 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:39:19.898  INFO 29472 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:39:20.631  INFO 29472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:39:20.641  INFO 29472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:39:20.643  INFO 29472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:39:20.645  INFO 29472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:39:20.647  INFO 29472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:39:20.649  INFO 29472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:39:20.801  INFO 29472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$3110a9d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:39:21.041  INFO 29472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:39:21.048  INFO 29472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:39:21.049  INFO 29472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:39:21.124  INFO 29472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:39:21.124  INFO 29472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1090 ms
+2021-01-27 11:39:21.181  INFO 29472 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:39:21.181  INFO 29472 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:39:21.181  INFO 29472 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:39:21.181  INFO 29472 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:39:21.182  INFO 29472 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:39:21.182  INFO 29472 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:39:21.182  INFO 29472 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:39:21.342  INFO 29472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:39:21.346  INFO 29472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:39:21.346  INFO 29472 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:39:21.347  INFO 29472 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:39:21.347  INFO 29472 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:39:21.348  INFO 29472 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:39:21.985  INFO 29472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:39:22.098  WARN 29472 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:39:22.192  INFO 29472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:39:22.248  INFO 29472 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:39:22.249  INFO 29472 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+sql.show: 'true'
+
+2021-01-27 11:39:22.272  INFO 29472 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:39:22.287  INFO 29472 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:39:22.355  INFO 29472 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 105 milliseconds.
+2021-01-27 11:39:22.455  INFO 29472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:39:22.464  INFO 29472 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.94 seconds (JVM running for 3.648)
+2021-01-27 11:39:27.697  INFO 29472 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:39:27.698  INFO 29472 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:39:27.699  INFO 29472 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-27 11:39:28.111  INFO 29472 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Logic SQL: select id,date from sharding_test a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:39:28.111  INFO 29472 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : SQLStatement: SelectStatementContext(super=CommonSQLStatementContext(sqlStatement=org.apache.shardingsphere.sql.parser.sql.statement.dml.SelectStatement@1747b4b1, tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@1c339f21), tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@1c339f21, projectionsContext=ProjectionsContext(startIndex=7, stopIndex=13, distinctRow=false, projections=[ColumnProjection(owner=null, name=id, alias=Optional.empty), ColumnProjection(owner=null, name=date, alias=Optional.empty)]), groupByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.groupby.GroupByContext@3191fe29, orderByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.orderby.OrderByContext@abc01ee, paginationContext=org.apache.shardingsphere.sql.parser.binder.segment.select.pagination.PaginationContext@20f4de34, containsSubquery=false)
+2021-01-27 11:39:28.112  INFO 29472 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date from sharding_test_202012 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:39:28.112  INFO 29472 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date from sharding_test_202101 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09'
+2021-01-27 11:44:22.778  INFO 20348 --- [main] com.ld.mpdemo.MpdemoApplication          : Starting MpdemoApplication using Java 1.8.0_172 on LAPTOP-BV5GOES8 with PID 20348 (E:\IdeaProjects\mpdemo\target\classes started by ld in E:\IdeaProjects\mpdemo)
+2021-01-27 11:44:22.781 DEBUG 20348 --- [main] com.ld.mpdemo.MpdemoApplication          : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-01-27 11:44:22.781  INFO 20348 --- [main] com.ld.mpdemo.MpdemoApplication          : The following profiles are active: dev
+2021-01-27 11:44:23.512  INFO 20348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'stringToNoneShardingStrategyConfigurationConverter' of type [org.apache.shardingsphere.spring.boot.converter.StringToNoneShardingStrategyConfigurationConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:44:23.524  INFO 20348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.sharding-org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.sharding.SpringBootShardingRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:44:23.526  INFO 20348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.masterslave-org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.masterslave.SpringBootMasterSlaveRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:44:23.528  INFO 20348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.encrypt-org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.encrypt.SpringBootEncryptRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:44:23.530  INFO 20348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere.shadow-org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.shadow.SpringBootShadowRuleConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:44:23.533  INFO 20348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.shardingsphere-org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.common.SpringBootPropertiesConfigurationProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:44:23.681  INFO 20348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration' of type [org.apache.shardingsphere.shardingjdbc.spring.boot.SpringBootConfiguration$$EnhancerBySpringCGLIB$$18068333] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 11:44:23.926  INFO 20348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8885 (http)
+2021-01-27 11:44:23.933  INFO 20348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-27 11:44:23.933  INFO 20348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-27 11:44:24.011  INFO 20348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-27 11:44:24.011  INFO 20348 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1076 ms
+2021-01-27 11:44:24.068  INFO 20348 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.close() throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:44:24.068  INFO 20348 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.sql.Connection org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getConnection(java.lang.String,java.lang.String) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:44:24.068  INFO 20348 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.util.logging.Logger org.apache.shardingsphere.shardingjdbc.jdbc.adapter.AbstractDataSourceAdapter.getParentLogger()] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:44:24.068  INFO 20348 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final int org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.getLoginTimeout() throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:44:24.068  INFO 20348 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.apache.shardingsphere.shardingjdbc.jdbc.unsupported.AbstractUnsupportedOperationDataSource.setLoginTimeout(int) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:44:24.068  INFO 20348 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final java.lang.Object org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.unwrap(java.lang.Class) throws java.sql.SQLException] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:44:24.069  INFO 20348 --- [main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final boolean org.apache.shardingsphere.shardingjdbc.jdbc.adapter.WrapperAdapter.isWrapperFor(java.lang.Class)] because it is marked as final: Consider using interface-based JDK proxies instead!
+2021-01-27 11:44:24.223  INFO 20348 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2021-01-27 11:44:24.226  INFO 20348 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,slave} inited
+2021-01-27 11:44:24.227  INFO 20348 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [slave] success
+2021-01-27 11:44:24.228  INFO 20348 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [sharding] success
+2021-01-27 11:44:24.228  INFO 20348 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - load a datasource named [master] success
+2021-01-27 11:44:24.228  INFO 20348 --- [main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [3] datasource,primary datasource named [master]
+2021-01-27 11:44:24.866  INFO 20348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-27 11:44:24.979  WARN 20348 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-27 11:44:25.074  INFO 20348 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2021-01-27 11:44:25.130  INFO 20348 --- [main] o.a.s.core.log.ConfigurationLogger       : ShardingRuleConfiguration:
+tables:
+  sharding_test:
+    actualDataNodes: shardingmaster.sharding_test_$->{2020..2021}0$->{1..9},shardingmaster.sharding_test_$->{2020..2021}$->{10..12}
+    logicTable: sharding_test
+    tableStrategy:
+      standard:
+        preciseAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableShardingAlgorithm
+        rangeAlgorithmClassName: com.ld.mpdemo.base.framework.shardingSphere.TableRangeShardingAlgorithm
+        shardingColumn: date
+
+2021-01-27 11:44:25.131  INFO 20348 --- [main] o.a.s.core.log.ConfigurationLogger       : Properties:
+sql.show: 'true'
+
+2021-01-27 11:44:25.143  INFO 20348 --- [main] ShardingSphere-metadata                  : Loading 1 logic tables' meta data.
+2021-01-27 11:44:25.171  INFO 20348 --- [main] ShardingSphere-metadata                  : Loading 9 tables' meta data.
+2021-01-27 11:44:25.249  INFO 20348 --- [main] ShardingSphere-metadata                  : Meta data load finished, cost 118 milliseconds.
+2021-01-27 11:44:25.349  INFO 20348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8885 (http) with context path ''
+2021-01-27 11:44:25.358  INFO 20348 --- [main] com.ld.mpdemo.MpdemoApplication          : Started MpdemoApplication in 2.97 seconds (JVM running for 3.671)
+2021-01-27 11:44:37.252  INFO 20348 --- [http-nio-8885-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-27 11:44:37.253  INFO 20348 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-27 11:44:37.253  INFO 20348 --- [http-nio-8885-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-27 11:44:37.677  INFO 20348 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Logic SQL: select id,date from sharding_test a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09' order by a.date desc limit 0,3
+2021-01-27 11:44:37.677  INFO 20348 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : SQLStatement: SelectStatementContext(super=CommonSQLStatementContext(sqlStatement=org.apache.shardingsphere.sql.parser.sql.statement.dml.SelectStatement@27260ef8, tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@a296fd7), tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@a296fd7, projectionsContext=ProjectionsContext(startIndex=7, stopIndex=13, distinctRow=false, projections=[ColumnProjection(owner=null, name=id, alias=Optional.empty), ColumnProjection(owner=null, name=date, alias=Optional.empty), DerivedProjection(expression=a.date, alias=Optional[ORDER_BY_DERIVED_0])]), groupByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.groupby.GroupByContext@4a237dc2, orderByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.orderby.OrderByContext@7aaae663, paginationContext=org.apache.shardingsphere.sql.parser.binder.segment.select.pagination.PaginationContext@6d6c6600, containsSubquery=false)
+2021-01-27 11:44:37.678  INFO 20348 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date , a.date AS ORDER_BY_DERIVED_0 from sharding_test_202012 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09' order by a.date desc limit 0,3
+2021-01-27 11:44:37.678  INFO 20348 --- [http-nio-8885-exec-1] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date , a.date AS ORDER_BY_DERIVED_0 from sharding_test_202101 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09' order by a.date desc limit 0,3
+2021-01-27 11:45:54.469  INFO 20348 --- [http-nio-8885-exec-3] ShardingSphere-SQL                       : Logic SQL: select id,date from sharding_test a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09' order by a.date desc limit 0,3
+2021-01-27 11:45:54.469  INFO 20348 --- [http-nio-8885-exec-3] ShardingSphere-SQL                       : SQLStatement: SelectStatementContext(super=CommonSQLStatementContext(sqlStatement=org.apache.shardingsphere.sql.parser.sql.statement.dml.SelectStatement@27260ef8, tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@7a195156), tablesContext=org.apache.shardingsphere.sql.parser.binder.segment.table.TablesContext@7a195156, projectionsContext=ProjectionsContext(startIndex=7, stopIndex=13, distinctRow=false, projections=[ColumnProjection(owner=null, name=id, alias=Optional.empty), ColumnProjection(owner=null, name=date, alias=Optional.empty), DerivedProjection(expression=a.date, alias=Optional[ORDER_BY_DERIVED_0])]), groupByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.groupby.GroupByContext@74dea065, orderByContext=org.apache.shardingsphere.sql.parser.binder.segment.select.orderby.OrderByContext@70e13a26, paginationContext=org.apache.shardingsphere.sql.parser.binder.segment.select.pagination.PaginationContext@35e3aa5e, containsSubquery=false)
+2021-01-27 11:45:54.470  INFO 20348 --- [http-nio-8885-exec-3] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date , a.date AS ORDER_BY_DERIVED_0 from sharding_test_202012 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09' order by a.date desc limit 0,3
+2021-01-27 11:45:54.470  INFO 20348 --- [http-nio-8885-exec-3] ShardingSphere-SQL                       : Actual SQL: shardingmaster ::: select id,date , a.date AS ORDER_BY_DERIVED_0 from sharding_test_202101 a where a.date between '2020-12-23 10:08:09' and '2021-01-26 10:08:09' order by a.date desc limit 0,3
+2021-01-27 13:15:45.725  INFO 20348 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2021-01-27 13:15:45.726  INFO 20348 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2021-01-27 13:15:45.726  WARN 20348 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource close the datasource named [sharding] failed,
+2021-01-27 13:15:45.726  INFO 20348 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-01-27 13:15:45.726  INFO 20348 --- [SpringContextShutdownHook] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2021-01-27 13:15:45.727  INFO 20348 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2021-01-27 13:15:45.727  INFO 20348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
