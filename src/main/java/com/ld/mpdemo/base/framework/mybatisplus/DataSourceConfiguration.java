@@ -38,6 +38,9 @@ public class DataSourceConfiguration {
     @Autowired
     private DynamicDataSourceProperties properties;
 
+
+    private String lear = "";
+
     /**
      * shardingjdbc有四种数据源，需要根据业务注入不同的数据源
      *
