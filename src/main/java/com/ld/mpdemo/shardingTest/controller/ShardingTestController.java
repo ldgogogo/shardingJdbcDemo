@@ -32,5 +32,12 @@ public class ShardingTestController {
         return service.shardingTest();
     }
 
+
+    @GetMapping(value = "/test3")
+    @ResponseBody
+    public List<ShardingTest> shardingTest3() {
+        return service.shardingTest();
+    }
+
 }
 

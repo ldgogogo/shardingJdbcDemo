@@ -38,7 +38,6 @@ public class DataSourceConfiguration {
     @Autowired
     private DynamicDataSourceProperties properties;
 
-
     private String lear = "";
 
     /**
